@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.parent {
+    width: 600px;
+    padding: 20px;
+	font-family: 'Source Sans PRO';
+    }
+
+.parent--inline-block {
+    font-size: 0;
+}
+
+.parent--inline-block .child {
+    display: inline-block;
+}
+
+div.child--first, div.child--middle {
+    width: 30%;
+    font-size: 16px;
+    padding-right: 10px;
+
+}
+
+div.child--middle {
+    font-weight: bold;
+}
+
+div.child--last {
+    width: 40%;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.parent--float .child {
+    float: left;
+}
+
+.parent--float::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.parent--flexbox {
+    display: flex;
+}

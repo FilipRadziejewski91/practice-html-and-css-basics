@@ -1,0 +1,73 @@
+.navbar {
+    overflow: hidden;
+    background-color: #999;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.navbar a, .subnav-content a, .subnav-content-second a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav, .subnav-second {
+    overflow: hidden;
+    float: left;
+}
+
+.subnav .subnavbtn, .subnav-second .subnavbtn--second {
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .navbar a:hover, .subnav:hover .subnavbtn, .subnav-second:hover .subnavbtn--second {
+    background-color: #999;
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 7%;
+    background-color: #999;
+    width: 10%;
+    z-index: 1;
+  }
+
+  .subnav-content-second {
+    display: none;
+    position: absolute;
+    left: 30%;
+    background-color: #999;
+    width: 10%;
+    z-index: 3;
+  }
+
+  .subnav-content a {
+    float: left;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .subnav-content a:hover {
+    background-color: #999;
+    color: #fff;
+  }
+
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+
+  .subnav-second:hover .subnav-second-content {
+    display: block;
+  }
